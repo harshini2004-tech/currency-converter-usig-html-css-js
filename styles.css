@@ -1,0 +1,163 @@
+body {
+    body 
+    font-family:Arial,sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color : rgb(252, 240, 186);
+    }
+.icon-bar {
+position: fixed;
+top: 50%;
+left: 0;
+transform: translateY(-50%);
+display: flex;
+flex-direction: column;
+gap: 10px;
+background-color: #fff;
+padding: 10px;
+border-radius: 5px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.icon-bar a {
+display: block;
+text-align: left;
+padding: 16px;
+transition: all 0.3s ease;
+color: white;
+font-size: 20px;
+}
+
+
+.icon-bar a:hover {
+background-color: #000;
+}
+
+.facebook {
+background: #3B5998;
+color: white;
+}
+
+.twitter {
+background: #55ACEE;
+color: white;
+}
+
+.google {
+background: #dd4b39;
+color: white;
+}
+
+.linkedin {
+background: #007bb5;
+color: white;
+}
+
+.youtube {
+background: #bb0000;
+color: white;
+}
+
+
+
+
+header {
+    background-image: url('https://images.pexels.com/photos/106152/euro-coins-currency-money-106152.jpeg?auto=compress&cs=tinysrgb&w=600');
+    background-size:1500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fffbfb;
+    padding: 120px;
+    text-align: right;
+    font-size: 35px;}
+
+#icons {
+    display: flex;
+    gap: 120px;
+    font-size: 30px;
+    color:white;
+    background-color: #f6c000;
+    cursor:pointer;
+}
+#social-icons a {
+    margin: 0 10px;
+    color: #333;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+
+#content {
+    max-width: 800px;
+    width: 100%;
+    padding: 30px;
+    box-sizing: border-box;
+    text-align: center;
+    font-size:1000px;
+}
+
+footer {
+    background-color: #f6c000;
+    color: #fff;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+#converterContent,
+#newsContent,
+#contactContent,
+#aboutcontent
+ {
+    display: none;
+    padding: 40px;
+    max-width: 600px; 
+    margin: 0 auto;
+    font-size: 20px; 
+}
+#helpContent {
+    display: none;
+    padding:120px; 
+    max-width: 600px; 
+    margin: 0 auto; 
+    font-size: 30px;
+}
+
+#amount, #fromCurrency, #toCurrency {
+    font-size: 18px; 
+    height: 40px; 
+    padding: 8px; 
+    margin-bottom: 15px; 
+}
+
+button {
+    font-size: 18px; 
+    height: 40px; 
+    padding: 8px 15px; 
+}
+
+.news-item {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.news-item img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.news-item h2 {
+    text-decoration: underline; 
+}
+#home-icon.clicked {
+color: black;
+}
+#more {display: none;}
