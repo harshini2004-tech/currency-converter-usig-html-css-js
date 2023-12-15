@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   
+    <title>Responsive Currency Converter</title>
+    
+</head>
+<body>
+    <header
+        <h1>Welcome to the Currency Converter!</h1>
+    </header>
+
+    <div id="content">
+        
+        <div id="icons">
+            <span onclick="showContent('home')">Home</span>
+           
+            <span onclick="showContent('news')">Recent News</span>
+            <span onclick="showContent('contact')">Contact Us</span>
+            <span onclick="showContent('help')">Help</span>
+        </div>
+    </div>
+
+    <footer> 
+        
+    </footer>
+
+
+    <div id="converterContent">
+        <h1>Currency Converter</h1>
+        <label for="amount">Amount:</label>
+        <input type="number" id="amount" placeholder="Enter amount" />
+        
+        <label for="fromCurrency">From:</label>
+        <select id="fromCurrency">
+            <option value="USD">USD</option>
+            <option value="AED">AED</option>
+            <option value="ARS">ARS</option>
+            <option value="AUD">AUD</option>
+            <option value="BGN">BGN</option>
+            <option value="BRL">BRL</option>
+            <option value="BSD">BSD</option>
+            <option value="CAD">CAD</option>
+            <option value="CHF">CHF</option>
+            <option value="CLP">CLP</option>
+            <option value="CNY">CNY</option>
+            <option value="COP">COP</option>
+            <option value="CZK">CZK</option>
+            <option value="DKK">DKK</option>
+            <option value="DOP">DOP</option>
+            <option value="EGP">EGP</option>
+            <option value="EUR">EUR</option>
+            <option value="FJD">FJD</option>
+            <option value="GBP">GBP</option>
+            <option value="GTQ">GTQ</option>
+            <option value="HKD">HKD</option>
+            <option value="HRK">HRK</option>
+            <option value="HUF">HUF</option>
+            <option value="IDR">IDR</option>
+            <option value="ILS">ILS</option>
+            <option value="INR">INR</option>
+            <option value="ISK">ISK</option>
+            <option value="JPY">JPY</option>
+            <option value="KRW">KRW</option>
+            <option value="KZT">KZT</option>
+            <option value="MVR">MVR</option>
+            <option value="MXN">MXN</option>
+            <option value="MYR">MYR</option>
+            <option value="NOK">NOK</option>
+            <option value="NZD">NZD</option>
+            <option value="PAB">PAB</option>
+            <option value="PEN">PEN</option>
+            <option value="PHP">PHP</option>
+            <option value="PKR">PKR</option>
+            <option value="PLN">PLN</option>
+            <option value="PYG">PYG</option>
+            <option value="RON">RON</option>
+            <option value="RUB">RUB</option>
+            <option value="SAR">SAR</option>
+            <option value="SEK">SEK</option>
+            <option value="SGD">SGD</option>
+            <option value="THB">THB</option>
+            <option value="TRY">TRY</option>
+            <option value="TWD">TWD</option>
+            <option value="UAH">UAH</option>
+            <option value="UYU">UYU</option>
+            <option value="ZAR">ZAR</option>
+        
+        </select>
+        
+        <label for="toCurrency">To:</label>
+        <select id="toCurrency">
+            <option value="USD">USD</option>
+            <option value="AED">AED</option>
+            <option value="ARS">ARS</option>
+            <option value="AUD">AUD</option>
+            <option value="BGN">BGN</option>
+            <option value="BRL">BRL</option>
+            <option value="BSD">BSD</option>
+            <option value="CAD">CAD</option>
+            <option value="CHF">CHF</option>
+            <option value="CLP">CLP</option>
+            <option value="CNY">CNY</option>
+            <option value="COP">COP</option>
+            <option value="CZK">CZK</option>
+            <option value="DKK">DKK</option>
+            <option value="DOP">DOP</option>
+            <option value="EGP">EGP</option>
+            <option value="EUR">EUR</option>
+            <option value="FJD">FJD</option>
+            <option value="GBP">GBP</option>
+            <option value="GTQ">GTQ</option>
+            <option value="HKD">HKD</option>
+            <option value="HRK">HRK</option>
+            <option value="HUF">HUF</option>
+            <option value="IDR">IDR</option>
+            <option value="ILS">ILS</option>
+            <option value="INR">INR</option>
+            <option value="ISK">ISK</option>
+            <option value="JPY">JPY</option>
+            <option value="KRW">KRW</option>
+            <option value="KZT">KZT</option>
+            <option value="MVR">MVR</option>
+            <option value="MXN">MXN</option>
+            <option value="MYR">MYR</option>
+            <option value="NOK">NOK</option>
+            <option value="NZD">NZD</option>
+            <option value="PAB">PAB</option>
+            <option value="PEN">PEN</option>
+            <option value="PHP">PHP</option>
+            <option value="PKR">PKR</option>
+            <option value="PLN">PLN</option>
+            <option value="PYG">PYG</option>
+            <option value="RON">RON</option>
+            <option value="RUB">RUB</option>
+            <option value="SAR">SAR</option>
+            <option value="SEK">SEK</option>
+            <option value="SGD">SGD</option>
+            <option value="THB">THB</option>
+            <option value="TRY">TRY</option>
+            <option value="TWD">TWD</option>
+            <option value="UAH">UAH</option>
+            <option value="UYU">UYU</option>
+            <option value="ZAR">ZAR</option>
+            
+        </select>
+        
+        <button onclick="convert()">Convert</button>
+
+        <p id="result"></p>
+    </div>
+    
+    <div class="icon-bar">
+        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+        <a href="#" class="google"><i class="fa fa-google"></i></a>
+        <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+        <a href="#" class="youtube"><i class="fa fa-youtube"></i></a>
+      </div>
+
+    <div id="newsContent">
+        <h1>Recent News</h1>
+        <div class="news-item">
+            <img src="https://images.moneycontrol.com/static-mcnews/2023/10/rupee_dollar-770x433.jpg" alt="News Image 1">
+            <h2>Currency Options | A low-risk and high probability options strategy in currency pair USDINR</h2>
+           
+            <p>USDINR is expected to remain sideways within our range. A Double Butterfly (Asymmetrical) trade to capitalise.<span id="dots">...</span><span id="more">
+       
+            An upward movement in crude oil prices, however, weighed on the Indian currency, according to forex traders.</span></p>
+            <button onclick="myFunction()" id="myBtn">Read more</button> </div>
+
+        <div class="news-item">
+            <img src="https://watcher.guru/news/wp-content/uploads/2023/10/us-dollar-chinese-china-yuan-currency-bills-brics-1024x684.jpg" alt="News Image 2">
+            <h2>BRICS: China’s Central Bank Dumping US Dollar in the Currency Market</h2>
+            <p>China’s Central Bank dumped the US dollar in the currency market for three consecutive days in December this month. <span id="dots">...</span><span id="more">
+                The Chinese state-run banks sold US dollars in the spot foreign exchange as retaliation to Moody’s negative rating on the Yuan. The rating agency Moody’s cut the Chinese Yuan’s outlook to negative and China did not take the move lightly. BRICS member China resorted to offloading the US dollar in an attempt to keep the Chinese Yuan from falling.
+            An upward movement in crude oil prices, however, weighed on the Indian currency, according to forex traders.</span></p>
+            <button onclick="myFunction()" id="myBtn">Read more</button>
+        </div>
+        <div class="news-item">
+            <img src="https://assets.telegraphindia.com/telegraph/2023/Dec/1701838341_rupee.jpg" alt="News Image 3">
+            <h2>Rupee rises 3 paise to 83.37 against US dollar in early trade</h2>
+            <p>The rupee appreciated 3 paise to 83.37 against the US dollar in early trade on Monday, <span id="dots">...</span><span id="more">
+                amid sustained inflow of foreign funds and bullish sentiment in the domestic equity market.
+
+                An upward movement in crude oil prices, however, weighed on the Indian currency, according to forex traders.</span></p>
+                <button onclick="myFunction()" id="myBtn">Read more</button>
+        </div>
+    
+        <div class="news-item">
+            <img src="https://i-invdn-com.investing.com/akapi-images/800x450/a96a47739d968e6de1a9e12fbe25c01a_w_800_h_450.jpg" alt="News Image 4">
+            <h2>Indonesia and South Korea set to launch local currency trade in 2024</h2>
+            
+            <p>Indonesia and South Korea have finalized operational guidelines for a new local currency transactions (LCT) framework slated to begin in 2024,<span id="dots">...</span><span id="more"> marking a significant step towards stronger financial integration between the two nations. The initiative will enable direct trade transactions between the Indonesian Rupiah (IDR) and the South Korean Won (KRW), streamlining cross-border payments and reducing foreign exchange risks associated with trade.
+      
+            An upward movement in crude oil prices, however, weighed on the Indian currency, according to forex traders.</span></p>
+            <button onclick="myFunction()" id="myBtn">Read more</button>  </div>
+
+    </div>
+   
+
+    <div id="contactContent">
+        <h1>Contact Us</h1>
+        <p>We are the students of MSRIT</p>
+        <p>For any inquiries, please contact harsh@gmail.com</p>
+        <p>To get in touch with us for something else, please use the form below or email nags@gmail.com</p>
+        <form>
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" placeholder="E.g., Kat">
+            
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" placeholder="E.g., Jones">
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="E.g., mail@example.com">
+            
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" placeholder="e.g., 123 456 78910">
+            
+            <label for="message">Message:</label>
+            <textarea id="message" placeholder="Type your message here..."></textarea>
+            
+            <button type="button" onclick="submitForm()">Submit</button>
+        </form>
+    </div>
+
+
+    <div id="helpContent">
+        <h1>Help</h1>
+        <p>Click on the buttons to navigate between different sections:</p>
+        <ul>
+            <li><strong>Home:</strong> Return to the home page.</li>
+            <li><strong>About:</strong> Learn more about the currency converter.</li>
+            <li><strong>Recent News:</strong> View the latest news and headlines.</li>
+            <li><strong>Contact Us:</strong> Connect with Rina Kent or inquire about foreign rights.</li>
+            <li><strong>Help:</strong> You're here! Get information on how to use each feature.</li>
+        </ul>
+        <p>If you have further questions, feel free to reach out to us through the Contact Us section.</p>
+    </div>
+    <div id="aboutContent">
+        <h1>About</h1>
+        <p>
+            Universal currency converter is a software application or website that provides for the easy conversion of currency values based on present-day exchange rates. .</p>
+           <p>Currency convertibility is essential in a global economy and critical for international commerce and finance. A currency that is inconvertible poses big barriers to trade, foreign investment, and tourism.</p>
+           <p>A universal currency converter is "universal" in the sense that you can not only convert your home currency into any other, but also any foreign currency for any other as well.</p>
+            <p> Universal converters typically use the most recent market prices in the foreign exchange market.</p>
+          <p>  Currency converters are use useful to tourists, multi-national businesses, and forex traders.</p>
+    </div>
+    
+    
+
+    <script src="index.js"></script>
+</body>
+</html>
